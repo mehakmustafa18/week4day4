@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const chatApi = createApi({
   reducerPath: 'chatApi',
   baseQuery: fetchBaseQuery({ 
-    baseUrl: import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+    baseUrl: import.meta.env.VITE_API_URL || 'https://shxk2d-5000.csb.app/api'
   }),
   tagTypes: ['Messages', 'Users'],
   endpoints: (builder) => ({
